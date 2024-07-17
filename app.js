@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(res => res.json())
         .then(data => {
             console.log(data)
-            h1_txt.textContent = data.myEnvVar;
+            h1_txt.textContent = data;
         })
 
 })
