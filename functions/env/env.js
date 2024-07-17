@@ -22,7 +22,7 @@ const handler = async (event) => {
     const myEnvVar = process.env.MY_ENV_VAR;  // Obtener el valor de la variable de entorno
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: `Valor de MY_ENV_VAR: ${myEnvVar}` }),
+      myEnvVar
     };
   } catch (error) {
     return { statusCode: 500, body: error.toString() };
