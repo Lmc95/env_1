@@ -2,6 +2,7 @@
   functions = "functions/"
 
 [[redirects]]
-  from = "/api/env"
+  from = "/netlify/functions/env"
   to = "/.netlify/functions/env"
   status = 200
+  force = true
